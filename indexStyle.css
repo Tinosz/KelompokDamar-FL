@@ -1,0 +1,21 @@
+@font-face {
+    font-family: pixelFont;
+    src: url("Fonts/ccoverbyteoffregular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: smallPixelFont;
+    src: url("Fonts/Minecraft.ttf") format("truetype");
+}
+
+.pixelFont{
+    font-family: pixelFont;
+}
+
+.smallPixelFont {
+    font-family: smallPixelFont;
+}
+
+#aboutUs{
+    margin-top: 10px;
+}
