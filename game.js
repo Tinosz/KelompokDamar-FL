@@ -4,6 +4,21 @@ let amountPerClick = 1;
 function addCounter(){
     coin += amountPerClick;
     document.getElementById("counter").textContent = coin;
+
+    const x = event.pageX;
+    const y = event.pageY;
+    const span = document.createElement('span');
+    span.classList.add('floating-number');
+    span.textContent = `+${amountPerClick}`;
+    span.style.left = `${x - span.offsetWidth / 2}px`;
+    span.style.top = `${y - span.offsetHeight / 2}px`;
+    document.body.appendChild(span);
+    coin += amountPerClick;
+    document.getElementById("counter").textContent = coin;
+
+    setTimeout(() => {
+        span.remove();
+    }, 1000);
 }
 
 let alatCounter = 0;
@@ -145,4 +160,12 @@ document.getElementById("clonePizzaButton").addEventListener("click", function()
     } else {
         alert('Not Enough Coins!');
     }
+
+    function click(event) {
+        const template = document.getElementByID('#floating-text-template').content.cloneNode(true);
+        const element = template.querySelector('.floating-text') //replace class with yours
+        element.style.left = `${event.clientX}px`
+        element.style.top = `${event.clientY}px`
+        document.appendChild(element);
+      }
 });

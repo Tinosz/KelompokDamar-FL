@@ -102,6 +102,29 @@ body{
     max-height: 100%;
 }
 
+.floating-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    animation: fade-out 1s linear forwards;
+    font-family: 'smallPixelFont';
+    font-size: 45px;
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-60px);
+    }
+}
 
 #upgrade{
     font-size: 45px;
