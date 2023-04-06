@@ -1,21 +1,12 @@
 # Idle-Clicker
- Idle-Clicker
-1. Tampilan:
-a. Ada Navigation Bar yang dapat diarahkan pada Main Game dan About Us.
-b. Terdapat Objek yang dapat di-click.
-c. Pilihan Upgrades.
-d. Pembelian Auto-Click.
-e. Halaman About Us.
-2. Fitur Permainan:
-a. Objek berhasil di-click dan mendapatkan poin atau uang.
-b. Upgrades berhasil dilakukan dan menambah kemampuan mendapatkan uang.
-c. Pembelian Auto-Click berhasil dan fitur Auto-Click berhasil.
-3. TAMBAHAN :
-Membuat fitur permainan tambahan diluar poin yang sudah disebutkan sebelumnya dan/atau
-membuat aturan gameplay yang menarik dan kompleks (Poin Tambahan).
+Kelompok Damar:
+- Valentino Mahardhika Putra (00000074857)
+- Daniel Himawan (00000073548)
+- Steven Axel Lenardi (00000073786)
+- Damar Nur Rafly (00000074723)
 
 Gameplay Mechanics:
-Upgrade alat = Automatic +1/5 seconds
-Rekrut Pegawai = Automatic +5/10 seconds
-Tambah Restoran = Clicker++
-Clone Pizza = (Upgrade alat + Rekrut Pegawai) * 2
+- Upgrade alat = Automatic +1/5 seconds
+- Rekrut Pegawai = Automatic +5/10 seconds
+- Tambah Restoran = Clicker++
+- Clone Pizza = (Upgrade alat + Rekrut Pegawai) * 2
