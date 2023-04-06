@@ -1,0 +1,74 @@
+body{
+    max-width: 1200px;
+    height: 100vh;
+    width: auto;
+    margin: auto;
+}
+
+.box{
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header{
+    background-color: lightslategrey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.main{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.main a{
+    text-decoration: none;
+    color: black;
+}
+
+.main:hover{
+    transform: scale(0.93);
+}
+
+#memberbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+.member {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    height: 300px;
+    width: 300px;
+    margin-top: 20px; 
+    margin-right: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.quotes {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ref{
+    margin-left: 30px; 
+    margin-top: 30px;
+}
