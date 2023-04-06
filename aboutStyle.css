@@ -1,8 +1,37 @@
 body{
-    max-width: 1200px;
+    max-width: 1600px;
     height: 100vh;
     width: auto;
     margin: auto;
+    background-color: rgba(255,244,176,255);
+}
+
+
+@font-face {
+    font-family: pixelFont;
+    src: url("Fonts/ccoverbyteoffregular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: smallPixelFont;
+    src: url("Fonts/Minecraft.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: boldPixelFont;
+    src: url("Fonts/upheavtt.ttf") format("truetype");
+}
+
+.boldPixelFont{
+    font-family: boldPixelFont;
+}
+
+.pixelFont{
+    font-family: pixelFont;
+}
+
+.smallPixelFont {
+    font-family: smallPixelFont;
 }
 
 .box{
@@ -14,10 +43,14 @@ body{
     padding-bottom: 20px;
 }
 
+#logo{
+    width: 75px;
+    
+}
+
 .header{
-    background-color: lightslategrey;
+    width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .main{
@@ -50,7 +83,7 @@ body{
     background-color: #333;
     padding: 20px;
     color: white;
-    height: 300px;
+    height: 350px;
     width: 300px;
     margin-top: 20px; 
     margin-right: 20px;
@@ -58,12 +91,18 @@ body{
     border-radius: 10px;
 }
 
+.memberImg{
+    border-radius: 10px;
+    width: 100px;
+    height: 130px;
+}
+
 .name {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
-.quotes {
+#quotes {
     font-size: 1rem;
     margin: 0;
 }
@@ -71,4 +110,18 @@ body{
 .ref{
     margin-left: 30px; 
     margin-top: 30px;
+}
+
+.gallery{
+    margin-top: 50px;
+}
+
+.photo{
+    border-radius: 40px;
+    margin-top: 15px;
+}
+
+.space{
+    margin-top: 15px;
+    
 }
