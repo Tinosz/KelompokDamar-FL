@@ -1,6 +1,7 @@
 # Idle-Clicker
 Link Github:
 - https://github.com/Tinosz/Idle-Clicker.git
+
 Kelompok Damar:
 - Valentino Mahardhika Putra (00000074857)
 - Daniel Himawan (00000073548)
