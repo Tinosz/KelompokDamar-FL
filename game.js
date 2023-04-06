@@ -168,3 +168,49 @@ document.getElementById("clonePizzaButton").addEventListener("click", function()
         document.appendChild(element);
       }
 });
+
+function addPizza(){
+    coin += amountPerClick;
+    document.getElementById("counter").textContent = coin;
+  
+    const x = event.pageX;
+    const y = event.pageY;
+  
+    // create the popout pizza image element
+    const popoutPizzaImg = document.createElement('img');
+    popoutPizzaImg.src = 'Images/pizza.png';
+    popoutPizzaImg.classList.add('popout-pizza');
+    popoutPizzaImg.style.left = `${x}px`;
+    popoutPizzaImg.style.top = `${y}px`;
+  
+    // append the popout pizza image to the body
+    document.body.appendChild(popoutPizzaImg);
+  
+    // remove the popout pizza image after 1 second
+    setTimeout(() => {
+      popoutPizzaImg.remove();
+    }, 1000);
+  
+    const span = document.createElement('span');
+    span.classList.add('floating-number');
+    span.textContent = `+${amountPerClick}`;
+    span.style.left = `${x - span.offsetWidth / 2}px`;
+    span.style.top = `${y - span.offsetHeight / 2}px`;
+    document.body.appendChild(span);
+    coin += amountPerClick;
+    document.getElementById("counter").textContent = coin;
+  
+    setTimeout(() => {
+      span.remove();
+    }, 1000);
+  }
+
+  function playSound() {
+    var sound = document.getElementById("bgmusic");
+    sound.volume = 1;
+    setTimeout(function() {
+        sound.play();
+      }, 1)
+  }
+
+
