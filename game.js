@@ -13,13 +13,12 @@ function addCounter(){
     span.style.left = `${x - span.offsetWidth / 2}px`;
     span.style.top = `${y - span.offsetHeight / 2}px`;
     document.body.appendChild(span);
-    coin += amountPerClick;
-    document.getElementById("counter").textContent = coin;
 
     setTimeout(() => {
         span.remove();
     }, 1000);
 }
+
 
 let alatCounter = 0;
 let addAlatCoin = 1;
