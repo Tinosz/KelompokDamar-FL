@@ -13,3 +13,9 @@ c. Pembelian Auto-Click berhasil dan fitur Auto-Click berhasil.
 3. TAMBAHAN :
 Membuat fitur permainan tambahan diluar poin yang sudah disebutkan sebelumnya dan/atau
 membuat aturan gameplay yang menarik dan kompleks (Poin Tambahan).
+
+Gameplay Mechanics:
+Upgrade alat = Automatic +1/5 seconds
+Rekrut Pegawai = Automatic +5/10 seconds
+Tambah Restoran = Clicker++
+Clone Pizza = (Upgrade alat + Rekrut Pegawai) * 2

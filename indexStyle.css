@@ -1,3 +1,7 @@
+body{
+    background-color: rgba(255,244,176,255);
+}
+
 @font-face {
     font-family: pixelFont;
     src: url("Fonts/ccoverbyteoffregular.otf") format("opentype");
@@ -8,6 +12,67 @@
     src: url("Fonts/Minecraft.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: boldPixelFont;
+    src: url("Fonts/upheavtt.ttf") format("truetype");
+}
+
+.boldPixelFont{
+    font-family: boldPixelFont;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    
+}
+
+@keyframes float-rotate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-5px) rotate(45deg);
+    }
+    50% {
+      transform: translateY(5px) rotate(90deg);
+    }
+    75% {
+      transform: translateY(-5px) rotate(135deg);
+    }
+    100% {
+      transform: translateY(0) rotate(180deg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    #pizzaImg {
+        position: absolute;
+        top: calc(50% - 400px); /* half of the height */
+        left: calc(50% - 255px);
+        animation: float 1.5s ease-in-out infinite;
+    }
+    .upgrade-buttons{
+        position: relative;
+        right: 100px;
+    }
+
+    #upgrade{
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 48px;
+    }
+  }
+  
+
+  
 .pixelFont{
     font-family: pixelFont;
 }
@@ -16,6 +81,110 @@
     font-family: smallPixelFont;
 }
 
-#aboutUs{
-    margin-top: 10px;
+#logo{
+    width: 75px;
+}
+
+#counter{
+    margin-top: 30px;
+}
+
+#pizzaImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    animation: float 1.5s ease-in-out infinite;
+}
+
+#pizzaImg img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.floating-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    pointer-events: none;
+    animation: fade-out 1s linear forwards;
+    font-family: 'smallPixelFont';
+    font-size: 45px;
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-60px);
+    }
+}
+
+#upgrade{
+    font-size: 45px;
+}
+
+.upgrade-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+.upgrade-button {
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #ff9811;
+    border: none;
+    border-radius: 10px;
+    height: 90px;
+    text-align: left;
+    padding: 10px;
+}
+  
+.upgrade-button:hover {
+    background-color: skyblue;
+}
+  
+.reverseItemJiggle:active {
+    animation: reverseJiggle 0.5s ;
+}
+
+@keyframes reverseJiggle {
+    0% {transform: scale(1); }
+    50% {transform: scale(0.9);}
+    100%{transform: scale(1);}
+
+}
+
+.box{
+    max-width: 1800px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.header{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#pepperoni{
+    position: absolute;
+}
+
+#pizza{
+    max-width: 100%;
+}
+
+#counter {
+    font-size: 100px;
 }
